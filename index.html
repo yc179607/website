@@ -6,73 +6,103 @@
   <title>Yang Chen</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 760px;
+      font-family: Georgia, "Times New Roman", serif;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 48px 24px;
       color: #222;
-      line-height: 1.8;
       background: #fff;
+      line-height: 1.75;
     }
-    .header {
+
+    .top {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 24px;
-      flex-wrap: wrap;
+      gap: 32px;
+      margin-bottom: 36px;
     }
-    .profile-text {
+
+    .info {
       flex: 1;
-      min-width: 260px;
     }
-    .profile-photo {
-      width: 140px;
-      height: 180px;
+
+    h1 {
+      font-size: 2.4rem;
+      margin: 0 0 12px 0;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    p {
+      margin: 6px 0;
+    }
+
+    .photo {
+      width: 160px;
+      height: 200px;
       object-fit: cover;
-      border: 1px solid #ddd;
-      border-radius: 12px;
+      border: 1px solid #ccc;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 0.3rem; }
-    h2 { margin-top: 2rem; }
-    a { color: #1a73e8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    hr { margin: 2rem 0; border: none; border-top: 1px solid #ddd; }
+
+    a {
+      color: #1a4fa3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .school {
+      margin-bottom: 18px;
+    }
+
+    .name {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .muted {
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <div class="header">
-    <div class="profile-text">
+  <div class="top">
+    <div class="info">
       <h1>Yang Chen</h1>
       <p>PhD Student, Rochester Institute of Technology</p>
       <p>Advisor: Professor Zilin Bian</p>
       <p>Email: <a href="mailto:yc8786@rit.edu">yc8786@rit.edu</a></p>
     </div>
-    <img src="photo.jpg" alt="Yang Chen" class="profile-photo" />
+
+    <img src="photo.jpg" alt="Yang Chen" class="photo" />
   </div>
 
-  <hr />
-
-  <h2>Research Interests</h2>
-  <p>3D vision, 3D Gaussian Splatting, remote sensing, and urban scene reconstruction.</p>
-
-  <hr />
-
   <h2>Education</h2>
-  <p>
-    <strong>Rochester Institute of Technology</strong><br />
-    PhD Student, GCCIS<br />
-    Rochester, New York, United States<br />
-    2025 – Present
-  </p>
 
-  <p>
-    <strong>Sun Yat-sen University</strong><br />
-    B.Eng. in Intelligent Transportation Engineering<br />
-    Guangzhou, Guangdong, China<br />
-    2021 – 2025
-  </p>
+  <div class="school">
+    <p class="name">Rochester Institute of Technology</p>
+    <p class="muted">PhD Student, GCCIS</p>
+    <p class="muted">Rochester, New York, United States</p>
+    <p class="muted">2025 – Present</p>
+  </div>
 
-  <hr />
+  <div class="school">
+    <p class="name">Sun Yat-sen University</p>
+    <p class="muted">Undergraduate Student, Intelligent System Engineering</p>
+    <p class="muted">Guangzhou, Guangdong, China</p>
+    <p class="muted">2021 – 2025</p>
+  </div>
 
   <h2>CV</h2>
   <p><a href="Yang_Chen_CV.pdf" target="_blank">Download CV</a></p>
